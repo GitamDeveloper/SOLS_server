@@ -1,0 +1,18 @@
+{
+  "name": "websocket-relay-server",
+  "version": "1.0.0",
+  "description": "Simple WebSocket relay server for Render",
+  "main": "relay-server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node relay-server.js"
+  },
+  "dependencies": {
+    "ws": "^8.13.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "",
+  "license": "MIT"
+}
