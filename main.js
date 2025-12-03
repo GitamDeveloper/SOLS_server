@@ -1,6 +1,6 @@
 // relay-server.js
 import http from "http";
-import WebSocket from "ws";
+import { WebSocketServer } from "ws"; // <-- исправлено
 
 const RECEIVER_KEY = "zss2izLqSy2F5N3t269XTVMTxxvxDOc1";
 let receiver = null;
@@ -10,7 +10,7 @@ const server = http.createServer((req, res) => {
   res.end("WebSocket Relay Server running\n");
 });
 
-const wss = new WebSocket.Server({ server });
+const wss = new WebSocketServer({ server }); // <-- теперь конструктор правильный
 
 wss.on("connection", (ws, req) => {
   console.log("New client connected");
