@@ -2,10 +2,10 @@
   "name": "websocket-relay-server",
   "version": "1.0.0",
   "description": "Simple WebSocket relay server for Render",
-  "main": "relay-server.js",
+  "main": "main.js",
   "type": "module",
   "scripts": {
-    "start": "node relay-server.js"
+    "start": "node main.js"
   },
   "dependencies": {
     "ws": "^8.13.0"
